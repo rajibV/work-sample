@@ -1,0 +1,227 @@
+$height100:100px;
+$height200:200px;
+$height300:300px;
+$height400:400px;
+
+$font-white:#fff;
+$font-black:#000;
+$font-gray:gray;
+
+
+$background-black:#000;
+$background-white:#fff;
+$background-gray:#c7c2c2;
+
+
+
+%section{
+    height: 700px;
+    background:$background-white;
+    width: 100%;
+    color:$font-black;
+}
+.top-menu ul{
+    list-style: none;
+    li{
+        padding: 8px;
+        display: inline-block;
+        a{
+            text-align: left;
+            text-decoration: none;
+            font-size: 17px;
+            font-weight: 450;
+            color: #fff;
+        }
+    }
+}
+
+.toparea-menu{
+    background:#6F95A8;
+    width: 100%;
+    
+}
+
+.top-menubar i{
+    color:#fff;
+    font-size: 17px;
+}
+.top-menubar a{
+    font-family: cursive;
+}
+
+.slider-area{
+    height: 600px;
+    width: 100%;
+}
+/*----------main menu-------*/
+
+.dropdown:hover>.dropdown-menu{
+          display: block;
+        } 
+.dropdown-menu{
+    height: 220px;
+    background: white;
+    border: none;
+    padding-top: 10px;
+}
+.navbar-nav{
+    float: right;
+    padding-left: 720px;
+}
+.navbar-nav li a{
+    text-transform: uppercase;
+}
+
+.nav-item a{
+    font-weight: 600;
+    font-style: bold;
+    font-family: serif;
+    color: $font-black;
+}
+/*-----------------Service area-------------*/
+
+.service-area{
+    @extend %section;
+    height: 800px;
+    background: #f2ebeb;
+}
+.service-text{
+    height: 100%;
+    width: 100%;
+    background: white;
+    box-shadow: 3px 3px 3px 3px gray;
+    border-radius: 5%;
+}
+.service-text h3{
+    padding: 10px;
+    text-align: center;
+}
+.service-text p{
+    padding: 10px;
+    text-align: justify;
+}
+
+.service-header,service-text{
+    padding-top: 40px;
+}
+
+/*------------hope area-------------*/
+.hope-area{
+    @extend %section;
+    background:$background-gray; 
+}
+.hope-text{
+    margin-top: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.hope-header,hope-text{
+    padding-top: 60px;
+}
+.hope-text h2{
+    text-align: center;
+}
+button{
+    padding-top: 20px;
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(128, 128, 128, 0.75);
+    top: -100%;
+    transition: .5s;
+}
+.overlay i{
+    padding-top: 35%;
+    font-size: 30px;
+    color: #DBDB1E;
+    
+}
+.overlay i:hover{
+    padding-top: 32%;
+    font-size: 50px;
+    transition: .5s;
+}
+.hope-text:hover .overlay{
+    top:0;
+    
+}
+/*---------review area--------*/
+.review-area{
+    height: 500px;
+    background: white;
+}
+.reviw-speech{
+    padding-top: 40px;
+}
+.reviw-speech p,h2{
+    font-family: cursive;
+    font-style: italic;
+}
+.reviw-speech i{
+    color: #dbdb1e;
+    font-size: 20px;
+}
+/*-------------counter-------------*/
+.counter-area{
+    height: 300px;
+    width: 100%;
+    background: black;
+    background-image: url(img/counter_mbg.jpg);
+    border-image-width: 100%;
+    color: white;
+}
+count-down h2{
+    color: #C7C2C2;
+}
+.count-down h3{
+    padding-top: 90px;
+    color: #C7C2C2;
+
+}
+.footer{
+    height: 300px;
+    width: 100%;
+    background: $background-gray;
+}
+.footer-text{
+    padding-top: 60px;
+}
+.footer-text i{
+    color: #654e4e;
+    font-size: 50px;
+}
+.footer-text p{
+    color: white;
+    font-size: 18px;
+    color: black;
+    font-family: cursive;
+    
+}
+.footer-text a{
+    color: $font-white;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: cursive;
+    border-bottom: 1px black;
+}
+
+.copyright-area{
+    background: black;
+}
+.copyright p{
+    text-align: center;
+    color: azure;
+}
+
+
+
+
+
+
+
+
+
+
+
